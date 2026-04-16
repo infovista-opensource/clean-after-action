@@ -1,6 +1,6 @@
 name: 'Cleanup self-hosted runner workspace at the end of job'
 description: 'Cleans up the self-hosted runner workspace after build finishes'
-author: 'mickem+FraBle+danielefranceschi'
+author: 'mickem+FraBle+mmontesi'
 branding:
   icon: 'delete'
   color: 'red'
@@ -9,6 +9,6 @@ inputs:
     description: 'Keep the .git folder to speedup cloning'
     default: 'false'
 runs:
-  using: 'node20'
+  using: 'node24'
   main: 'index.js'
   post: 'cleanup.js'
